@@ -1,0 +1,170 @@
+.header{
+  display: flex;
+  justify-content:space-between;
+  height: 56px;
+  position: fixed;
+  top : 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(221, 219, 219);
+  z-index: 100;
+}
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.hamburger{
+  cursor:pointer;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 25px;
+}
+.youtube-logo{
+  cursor: pointer;
+  height: 20px;
+}
+.middle-section{
+  display: flex;
+  align-items: center;
+ 
+  flex : 1;
+  margin-left: 47px;
+  margin-right: 32px;
+  max-width: 500px;
+}
+.search-box::placeholder{
+  font-size: 16px;
+  font-family: Roboto;
+  color: rgb(148, 142, 142);
+
+}
+.search-box{
+  margin-left: 14px;
+  border-width: 0.1;
+  border-style: solid;
+  border-color: rgb(217, 214, 214);
+  font-size: 16px;
+  height: 40px;
+  flex: 1;
+  width: 0;
+  
+  padding-left: 10px;
+  max-width: 340px;
+
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.02);
+}
+.search-button{
+  height: 42px;
+  width: 65px;
+  
+  border-width:1;
+  border-style: solid;
+  background-color: rgb(249, 249, 249);
+  border-color: rgb(217, 214, 214);
+  margin-left: -2px;
+ 
+}
+.seach-button,
+ .icon-container,
+ .youtube-container,
+ .noti-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.search-button .hoverEle,
+.voice-button .hoverEle,
+.icon-container .hoverEle,
+.youtube-container .hoverEle,
+.noti-container .hoverEle
+{
+  position: absolute;
+  background-color: rgb(134, 134, 134);
+  color: white;
+  font-size: 13px;
+  font-family: Roboto;
+  bottom: -34px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 2px;
+  white-space: nowrap ;
+  opacity: 0;
+}
+.search-button:hover .hoverEle,
+.voice-button:hover .hoverEle,
+.icon-container:hover .hoverEle,
+.youtube-container:hover .hoverEle,
+.noti-container:hover .hoverEle
+{
+  opacity: 1;
+  pointer-events: none;
+}
+.search-icon{
+  height: 24px;
+ 
+}
+.voice-button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  height: 42px;
+  width: 40px;
+  background-color: rgb(248, 248, 248);
+  position: relative;
+}
+.voice-icon{
+  height: 25px;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  width: 184px;
+  flex-shrink: 0;
+}
+.icons-img{
+  height: 24px;
+}
+.apps-img{
+  height: 24px;
+}
+.noti-img{
+  height: 24px;
+}
+.notification-class{
+  position: relative;
+}
+.notification-number{
+  background-color: rgb(231, 4, 4);
+  color: white;
+  border-radius: 10px;
+  height: 13px;
+  position: absolute;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 12px;
+  font-family: Roboto;
+  top: -2px;
+  right: -4px;
+}
+.my-channel-img{
+  height: 33px;
+  border-radius: 16px;
+}
